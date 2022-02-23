@@ -3,7 +3,14 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  azureADConfig: {
+    tenantId: 'https://login.microsoftonline.com/common',
+    // clientId: '87e8dac9-510d-4444-992d-65cf33cdcf65',
+    clientId: '64eab84c-a6f2-42d2-b194-48ca2a06544c',
+    redirectUri: 'http://localhost:4201',
+    logoutPath: '' // value must be a valid absolute URI.
+  },
+  production: false,
 };
 
 /*
@@ -14,3 +21,5 @@ export const environment = {
  * on performance if an error is thrown.
  */
 // import 'zone.js/plugins/zone-error';  // Included with Angular CLI.
+
+
